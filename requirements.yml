@@ -1,0 +1,18 @@
+
+- src: geerlingguy.jenkins
+
+- src: geerlingguy.postgresql
+
+- src: wtanaka.unzip
+
+- src: geerlingguy.git
+
+
+- src: geerlingguy.ansible
+
+- src: ANXS.postgresql
+
+- src: jdauphant.ssl-certs
+
+- src: nginxinc.nginx
+- src: tecris.maven

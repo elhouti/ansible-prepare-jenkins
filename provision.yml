@@ -1,0 +1,23 @@
+---
+# requirements install
+- name: Install Roles from Galaxy
+  hosts: all
+  connection: local
+  tasks:
+    - name: installing required ansible-galaxy roles
+      command: "ansible-galaxy install --ignore-errors -r requirements.yml"
+
+# Provision Jenkins on remote server
+- name: Deploy Jenkins CI
+  hosts: jenkins_server
+  remote_user: o-jenkins
+  become: yes
+
+  roles:
+    - geerlingguy.jenkins
+    - geerlingguy.git
+    - tecris.maven
+    - geerlingguy.ansible
+  environment:
+    http_proxy: http://193.56.47.8:8080/
+    https_proxy: http://193.56.47.8:8080/
