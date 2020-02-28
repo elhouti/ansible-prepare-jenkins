@@ -1,7 +1,5 @@
 dependencies:
   - geerlingguy.jenkins
-  - geerlingguy.postgresql
-  - wtanaka.unzip
   - geerlingguy.git
   - tecris.maven
   - geerlingguy.ansible
