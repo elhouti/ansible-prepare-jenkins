@@ -1,4 +1,4 @@
-# Automatisation de l'approvisionnement, installation et configuration de Jenkins sur un serveur distant using Ansible.
+# Automatisation de l'installation et configuration de Jenkins sur un serveur distant using Ansible.
 
 Pour faire il suffit de suivre ces étapes:
 ```
